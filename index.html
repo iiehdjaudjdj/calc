@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="calc-container">
+        <div class="calc-header">
+            <h1 class="calc-title">Calculator</h1>
+        </div>
+        
+        <div class="calc-display-wrapper">
+            <div class="calc-expression" id="calcExpression"></div>
+            <div class="calc-display" id="calcDisplay">0</div>
+        </div>
+        
+        <div class="calc-buttons">
+            <button class="calc-btn calc-btn-clear" data-action="clear">
+                <i class="bi bi-x-circle"></i>
+            </button>
+            <button class="calc-btn calc-btn-operator" data-action="backspace">
+                <i class="bi bi-backspace"></i>
+            </button>
+            <button class="calc-btn calc-btn-operator" data-value="%" data-action="operator">%</button>
+            <button class="calc-btn calc-btn-operator" data-value="/" data-action="operator">
+                <i class="bi bi-slash"></i>
+            </button>
+            
+            <button class="calc-btn calc-btn-number" data-value="7">7</button>
+            <button class="calc-btn calc-btn-number" data-value="8">8</button>
+            <button class="calc-btn calc-btn-number" data-value="9">9</button>
+            <button class="calc-btn calc-btn-operator" data-value="*" data-action="operator">
+                <i class="bi bi-x"></i>
+            </button>
+            
+            <button class="calc-btn calc-btn-number" data-value="4">4</button>
+            <button class="calc-btn calc-btn-number" data-value="5">5</button>
+            <button class="calc-btn calc-btn-number" data-value="6">6</button>
+            <button class="calc-btn calc-btn-operator" data-value="-" data-action="operator">
+                <i class="bi bi-dash"></i>
+            </button>
+            
+            <button class="calc-btn calc-btn-number" data-value="1">1</button>
+            <button class="calc-btn calc-btn-number" data-value="2">2</button>
+            <button class="calc-btn calc-btn-number" data-value="3">3</button>
+            <button class="calc-btn calc-btn-operator" data-value="+" data-action="operator">
+                <i class="bi bi-plus"></i>
+            </button>
+            
+            <button class="calc-btn calc-btn-number calc-btn-zero" data-value="0">0</button>
+            <button class="calc-btn calc-btn-number" data-value=".">.</button>
+            <button class="calc-btn calc-btn-equals" data-action="equals">
+                <i class="bi bi-equals"></i>
+                <span>=</span>
+            </button>
+        </div>
+        
+        <div class="calc-footer">
+            <p class="calc-credits">Modern Calculator Application</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
